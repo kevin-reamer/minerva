@@ -67,7 +67,6 @@
 	<div class="learningContent" ui-view>
 		<h1>Minerva</h1>
 		<p>Minerva is a tool used for producing various dashboards. This tool primarily uses a feature of AngularJS called <i>Directives</i> which define a set of easy to use custom HTML tags.</p>
-      <p>This Learning Guide provides the information and resources needed to create a new custom dashboard and has been broken down into the following sections:</p>
-      <img src="../../../images/MinervaLearnFrontPage.svg" style="padding-top:4em"/>
+      <p>This Learning Guide provides the information and resources needed to create a new custom dashboard and has been broken down into the sections seen on the left.</p>
 	</div>
 </mv-group>
