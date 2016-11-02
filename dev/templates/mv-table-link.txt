@@ -1,0 +1,15 @@
+﻿<div class="widget g-{{mvSize}}" id="{{mvId}}">
+   <div class="w-head lightbox-head">{{mvTitle}} <span class="w-table-input">Filter: <input type="text" ng-model="searchText" /></span></div>
+   <div class="w-body lightbox-body">
+      <div class="w-table" ng-style="{{mvStyle}}">
+         <table>
+            <tr>
+               <th ng-repeat="header in mvData.mapping">{{header.title}}</th>
+            </tr>
+            <tr ng-repeat="row in mvData.rows | filter:searchText">
+               <td ng-repeat="header in mvData.mapping" class="{{row['mv-color']}}"><a href='{{mvData.links[row[header.value]][header.value]}}' ng-if="mvData.links[row[header.value]][header.value]!=undefined">{{row[header.value]}}</a><span ng-if="mvData.links[row[header.value]][header.value]==undefined">{{row[header.value]}}</span></td>
+            </tr>
+         </table>
+      </div>
+   </div>
+</div>

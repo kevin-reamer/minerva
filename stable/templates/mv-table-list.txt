@@ -1,0 +1,15 @@
+﻿<div class="widget g-{{mvSize}}" id="{{mvId}}">
+   <div class="w-head lightbox-head">{{mvTitle}}</div>
+   <div class="w-body lightbox-body">
+      <div class="w-table-list" ng-style="{{mvStyle}}">
+         <table ng-repeat="stats in mvData">
+            <tr><th class="mv-table-list-title" colspan="2">{{stats.title}}</th></tr>
+            <tr ng-repeat="stat in stats.data">
+               <th>&emsp;<span class="{{stat.color}} || w-c{{$index}}">&emsp;</span> {{stat.title}}</th>
+               <td>{{stat.number}}</td>
+            </tr>
+            <tr><td>&nbsp;</td></tr>
+         </table>
+      </div>
+   </div>
+</div>

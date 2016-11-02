@@ -1,0 +1,21 @@
+﻿<div class="widget g-{{mvSize}}" id="{{mvId}}">
+   <div class="w-head lightbox-head">{{mvTitle}}</div>
+   <div class="w-body lightbox-body w-mediumtext">
+      <div class="w-any-num" ng-style="{{mvStyle}}">
+         <table>
+            <tr>
+               <th ng-repeat="stat in mvData.data" class="{{stat.titleColor}}">
+                  {{stat.title}}
+               </th>
+            </tr> 
+            <tr>
+               <td ng-repeat="stat in mvData.data" class="{{stat.numberColor}}">
+                  {{stat.number}}
+               </td>
+            </tr>
+         </table>
+      </div>
+      <ng-transclude></ng-transclude>
+   </div>
+   <div class="w-any-num-title">{{mvData.title}}</div>
+</div>

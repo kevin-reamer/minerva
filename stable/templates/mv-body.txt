@@ -1,0 +1,5 @@
+﻿<div class="mv-body">
+   <div class="mv-widget-container g{{mvRows}}r">
+      <ng-transclude></ng-transclude>
+   </div>
+</div>

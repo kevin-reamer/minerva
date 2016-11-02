@@ -1,0 +1,3 @@
+﻿<div class="gr-{{mvSize}} break" ng-style="{{mvStyle}}">
+   <ng-transclude></ng-transclude>
+</div>

@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+   <head>
+      <title>Minerva Example Dashboard</title>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+      <link type="text/css" rel="stylesheet" href="/org/DDIEM/kmt/SiteAssets/Minerva/dev/minerva.css"/>
+      <link type="text/css" rel="stylesheet" href="/org/DDIEM/kmt/SiteAssets/Minerva/demo/demo.css"/>
+      <link type="text/css" rel="stylesheet" href="/org/DDIEM/kmt/SiteAssets/Minerva/dependencies/rainbow-theme.css"/>
+      <link type="text/css" rel="stylesheet" href="/org/DDIEM/kmt/SiteAssets/Minerva/dependencies/bootstrap-nav.css"/>
+   		
+	<!--[if gte mso 9]><xml>
+	<mso:CustomDocumentProperties>
+	<mso:_dlc_DocId msdt:dt="string">S7ASQSUH3V3S-158-15</mso:_dlc_DocId>
+	<mso:_dlc_DocIdItemGuid msdt:dt="string">073db379-2107-467d-9b07-5466b6964883</mso:_dlc_DocIdItemGuid>
+	<mso:_dlc_DocIdUrl msdt:dt="string">https://teams.jieddo.mil/org/DDIEM/kmt/_layouts/DocIdRedir.aspx?ID=S7ASQSUH3V3S-158-15, S7ASQSUH3V3S-158-15</mso:_dlc_DocIdUrl>
+	</mso:CustomDocumentProperties>
+	</xml><![endif]-->
+</head>
+   <body>
+      <div ng-app="minervaDemoApp" ng-controller="mainCtrl" class="mv-container">
+         <mv-header mv-title={{title}}>
+            <div ng-hide="location == '/home'">
+            	<span class="nav-item" ng-class="{active: location == '/docs'}"><a href="#/docs">Learn</a></span>
+               <span class="nav-item" ng-class="{active: location == '/case'}"><a href="#/case">Case Study</a></span>
+            	<span class="nav-item" ng-class="{active: location == '/geo'}"><a href="#/geo">Geo</a></span>
+            	<span class="nav-item" ng-class="{active: location == '/tables'}"><a href="#/tables">Tables</a></span>
+            	<span class="nav-item" ng-class="{active: location == '/charts'}"><a href="#/charts">Charts</a></span>
+            	<span class="nav-item"><a href="#/home">Home</a></span>
+         	</div>
+         </mv-header>
+         <mv-body mv-cols="6">
+			<div ui-view></div>
+         </mv-body>
+         <mv-footer><div class="foot-right">Portal Team</div></mv-footer>
+      </div>
+      
+      <!-- dependencies -->
+      <script type="text/javascript" src="/org/DDIEM/kmt/SiteAssets/Minerva/dependencies/d3.min.js"></script>
+      <script type="text/javascript" src="/org/DDIEM/kmt/SiteAssets/Minerva/dependencies/d3.tip.v0.6.3.js"></script>
+      <script type="text/javascript" src="/org/DDIEM/kmt/SiteAssets/Minerva/dependencies/d3.geo.projection.v0.min.js"></script>
+      <script type="text/javascript" src="/org/DDIEM/kmt/SiteAssets/Minerva/dependencies/topojson.v1.min.js"></script>
+      <script type="text/javascript" src="/org/DDIEM/kmt/SiteAssets/Minerva/dependencies/angular.min.js"></script>
+      <script type="text/javascript" src="/org/DDIEM/kmt/SiteAssets/Minerva/dependencies/angular-sanitize.min.js"></script>
+      <script type="text/javascript" src="/org/DDIEM/kmt/SiteAssets/Minerva/dependencies/angular-ui-router.min.js"></script>
+      <script type="text/javascript" src="/org/DDIEM/kmt/SiteAssets/Minerva/dependencies/countriesList.js"></script>
+      <script type="text/javascript" src="/org/DDIEM/kmt/SiteAssets/Minerva/dependencies/rainbow-custom.min.js"></script>
+      <script type="text/javascript" src="/org/DDIEM/kmt/SiteAssets/Minerva/dependencies/ui-bootstrap-tpls-0.11.2.min.js"></script>
+      
+      <!-- minerva and demo -->
+      <script type="text/javascript" src="/org/DDIEM/kmt/SiteAssets/Minerva/dev/minerva.js"></script>
+      <script type="text/javascript" src="/org/DDIEM/kmt/SiteAssets/Minerva/demo/demo.js"></script>
+	   <script type="text/javascript" src="/org/DDIEM/kmt/SiteAssets/Minerva/demo/services/demo.services.js"></script>
+   </body>
+</html>

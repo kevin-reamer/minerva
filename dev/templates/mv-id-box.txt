@@ -1,0 +1,6 @@
+﻿<div class="widget g-{{mvSize}}" id="{{mvId}}">
+   <div class="w-head lightbox-head" ng-click="mvClick()">{{mvTitle}}</div>
+   <div class="w-body lightbox-body" id="{{mvBodyId}}">
+      <ng-transclude></ng-transclude>
+   </div>
+</div>

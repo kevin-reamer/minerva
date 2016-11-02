@@ -1,0 +1,4 @@
+﻿<div class="mv-header">
+   <div class="mv-title">{{mvTitle}}</div>
+   <div class="mv-title-right"><ng-transclude></ng-transclude></div>
+</div>
