@@ -1175,7 +1175,7 @@
          about: '',
          attributes: [],
          results: '',
-         example: 'https://teams.jieddo.mil/org/DDIEM/kmt/images/Minerva-Gathering Dashboard Data.svg'
+         example: ''
       };
       
       var stepOne = {
